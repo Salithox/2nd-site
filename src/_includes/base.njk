@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{site.siteName}} - {{ title }}</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css" />
     
 </head>
 <body>
-    <header>
-        <h1> {{ title }}</h1>
-    </header>
-    <main>
-        {{ content | safe }}
-    </main>
-    
-    {% include "components/footer.njk" %}
+    <div id="page-container">
+        <nav>
+                {% include "components/navbar.njk"%}
+        </nav>
+        <header>
+            <h1> {{ title }}</h1>
+        </header>
+        <main>
+            {{ content | safe }}
+        </main>
+        <footer>
+        {% include "components/footer.njk" %}
+        </footer>
+    </div>
 </body>
 </html>
