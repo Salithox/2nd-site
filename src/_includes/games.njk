@@ -1,0 +1,19 @@
+---
+layout: "base.njk"
+pagination:
+    alias: gamespost
+    data: collections.games
+    size: 10
+---
+<section>
+    {{content | safe }}
+</section>
+    <hr>
+    <article>
+        {% for post in gamespost %}
+            <section>
+            <h2>{{ post.data.title }}</h2>
+            {{ post.templateContent | safe }}
+        {% endfor %}
+    <hr>
+            </section>

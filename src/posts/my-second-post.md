@@ -1,5 +1,6 @@
 ---
 title: Second Post
+tags: posts
 ---
 
 
