@@ -1,7 +1,7 @@
 ---
 title: "Now Playing"
-layout: "games.njk"
-tags: "nowplaying"
+layout: "nowplaying.njk"
+tags: "games"
 desc: "The games i am now playing."
 ---
 

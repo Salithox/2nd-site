@@ -1,0 +1,17 @@
+---
+layout: "base.njk"
+---
+<section>
+    {{content | safe }}
+</section>
+    <hr>
+    <article>
+        {% for post in collections.upcominggames %}
+            <section>
+            <h2>{{ post.data.title }}</h2>
+            {{ post.templateContent | safe }}
+            </section>
+        {% endfor %}
+    <hr>
+    </article>
+           
