@@ -1,4 +1,17 @@
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content {
+	padding-bottom: 5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
 body {
+	max-width: 75%;
+	margin: auto;
     font-family: sans-serif;
 	background-color: black;
 	color: rgb(0, 255, 34);

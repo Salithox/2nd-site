@@ -10,6 +10,8 @@ layout: "base.njk"
             <section>
             <h2>{{ post.data.title }}</h2>
             {{ post.templateContent | safe }}
+            <br>
+            {{ post.date | postDate }}
             </section>
         {% endfor %}
     <hr>

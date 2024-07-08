@@ -5,9 +5,4 @@ title: Hello World
 
 Hello Test Fam!!!!
 
-
-{% for post in collections.posts %}
-
-[{{ post.data.title }}]({{ post.
-url }})
-    {% endfor %}
+This is the landing page. There is not much here yet. However there is some stuff in the games section. Please take a look. 
