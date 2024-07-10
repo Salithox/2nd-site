@@ -12,4 +12,11 @@ title: "Games"
         {% endfor %}
     </ul>
     </section>
+    <section>
+    <h2> My Gaming Collection </h2>
+        {% for post in collection.gcollection %}
+            <a href="{{ post.url }}"><h4> {{ post.data.title}} </h4></a>
+            <p>{{ post.data.desc }}</p>
+        {% endfor %}
+    </section>
 </article>
