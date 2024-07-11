@@ -1,21 +1,12 @@
 ---
-layout: "base.njk"
+layout: "g-collections.njk"
 tile: "Game collection"
-tag: "gcollection"
+tags: "g-collections"
 desc: "A database of my games i own and on what system."
 ---
 
-```json:table
-{
-    "fields" : [
-        {"key": "a", "label": "Game Title"},
-        {"key": "b", "label": "Placeholder"},
-        {"key": "c", "label": "Playstation,Steam,Xbox,Nintendo,Computer"}
-    ],
-    "items" : [
-      {"a": "Diablo 3", "b": "", "c": "Px3,S,Nx3"},
-      {"a": "Diablo 2", "b": "", "c": "C"}
-    ],
-    "filter" : true
-}
-```
+|   game   | placeholder |   System  |
+|:--------:|:-----------:|:---------:|
+| Diablo 3 |             | Px3,S,Nx2 |
+| Diablo 2 |             |     C     |
+|          |             |           |

@@ -6,7 +6,7 @@ layout: "base.njk"
 </section>
     <hr>
     <article>
-        {% for post in collections.nowplaying %}
+        {% for post in collections.g-collections %}
             <section>
             <h2>{{ post.data.title }}</h2>
             {{ post.templateContent | safe }}

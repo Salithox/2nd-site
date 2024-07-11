@@ -5,6 +5,17 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 7-11-24
+  - added game collections to folder.
+  - added game collection to nav bar/dropdown.
+  - added new njk to pull collections data. 
+  - fixed now playing header bug.
+
+- Known Bugs:
+  - ~~Duplicate header on now playing page.~~
+  - Games collection table not showing.
+  - Data from new njk not being pulled. 
+
 - 7-10-24
 
 - Known Bugs:
