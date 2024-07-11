@@ -14,7 +14,7 @@ title: "Games"
     </section>
     <section>
     <h2> My Gaming Collection </h2>
-        {% for post in collection.gcollection %}
+        {% for post in collections.gcollection %}
             <a href="{{ post.url }}"><h4> {{ post.data.title}} </h4></a>
             <p>{{ post.data.desc }}</p>
         {% endfor %}

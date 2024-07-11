@@ -5,6 +5,11 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 7-10-24
+
+- Known Bugs:
+  - Duplicate header on now playing page. 
+
 - 7-9-24
   - Added update log.
   - fixed known bugs.
