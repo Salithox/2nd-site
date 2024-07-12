@@ -6,13 +6,24 @@ const { DateTime } = require("luxon");
 const fg = require('fast-glob');
 // for excerpt rendering markdown to HTML
 const markdownIt = require("markdown-it");
+const markdownItAttrs = require('markdown-it-attrs')
 // for atom/rss feed
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
+
+const markdownItOptions = {
+    html: true,
+    breaks: true,
+    linkify: true
+  }
+  
+  const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs)
+
 
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy ("./src/css/style.css");
     eleventyConfig.addPassthroughCopy ("./src/components/");
+    eleventyConfig.setLibrary('md', markdownLib)
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
     eleventyConfig.addFilter("postDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toLocaleString(DateTime.DATE_MED);

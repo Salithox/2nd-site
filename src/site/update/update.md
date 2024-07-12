@@ -10,11 +10,16 @@ tags: "sitestuff"
   - added game collection to nav bar/dropdown.
   - added new njk to pull collections data. 
   - fixed now playing header bug.
+  - Fixed other bugs.
+  - Game table shows ... table. 
+  - added hover color to game collection table.
+  - added legend to game chart. 
 
 - Known Bugs:
   - ~~Duplicate header on now playing page.~~
-  - Games collection table not showing.
-  - Data from new njk not being pulled. 
+  - ~~Games collection table not showing.~~
+  - ~~Data from new njk not being pulled.~~
+  - ~~Game collection table not showing correctly?~~ 
 
 - 7-10-24
 
