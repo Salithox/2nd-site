@@ -5,6 +5,17 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 7-12-24
+  - omitting qty of games owned from collection for time being. 
+  - changed formatting of game collection to better work with Grid. 
+  - changed legend to html.
+  - updated css to use grid. nothing happened. 
+
+- Known bugs:
+  - Table broke when adding section to md file
+  - legend broke when adding section to md file
+  - 
+
 - 7-11-24
   - added game collections to folder.
   - added game collection to nav bar/dropdown.

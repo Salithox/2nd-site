@@ -97,3 +97,8 @@ table, th, td {
 	border: 2px solid;
 	tr:hover {background-color: rgb(54, 0, 0);}
 }
+
+li.legend {
+	display: grid;
+	grid-template-columns: 1fr, 1fr;
+}
