@@ -17,6 +17,7 @@
     "fast-glob": "^3.3.2",
     "luxon": "^3.4.4",
     "markdown-it": "^14.1.0",
-    "markdown-it-attrs": "^4.1.6"
+    "markdown-it-attrs": "^4.1.6",
+    "outdent": "^0.8.0"
   }
 }

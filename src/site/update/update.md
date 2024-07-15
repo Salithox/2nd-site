@@ -5,6 +5,15 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 7-14-2024
+  - Tried to do shortcode and failed. 
+  - added new game to master list. 
+
+- Known bugs:
+  - Table broke when adding section to md file
+  - legend broke when adding section to md file
+
+
 - 7-12-24
   - omitting qty of games owned from collection for time being. 
   - changed formatting of game collection to better work with Grid. 
@@ -14,7 +23,7 @@ tags: "sitestuff"
 - Known bugs:
   - Table broke when adding section to md file
   - legend broke when adding section to md file
-  - 
+
 
 - 7-11-24
   - added game collections to folder.
