@@ -5,6 +5,13 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 7-17-2024
+  - Added common-tags to list. 
+
+- Known bugs:
+  - Table broke when adding section to md file
+  - legend broke when adding section to md file
+
 - 7-14-2024
   - Tried to do shortcode and failed. 
   - added new game to master list. 
