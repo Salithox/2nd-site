@@ -5,7 +5,7 @@ tags: "gamelist"
 desc: "A database of my games i own and on what system."
 date: 2024-07-11
 ---
-{% article %}
+
 Legend:
   - C = PC
   - N = Nintendo
@@ -24,4 +24,3 @@ Legend:
 | Final Fantasy 14               |             |     C     | 
 | Monster hunter Worlds: Icebore |             |     P     |
 
-{% endarticle %}

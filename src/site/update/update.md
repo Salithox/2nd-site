@@ -7,10 +7,15 @@ tags: "sitestuff"
 
 - 7-17-2024
   - Added common-tags to list. 
+  - tested common-tags.
+  - added components folders to css.
+  - added card css
 
 - Known bugs:
   - Table broke when adding section to md file
   - legend broke when adding section to md file
+  - card not working
+  - css for card not working
 
 - 7-14-2024
   - Tried to do shortcode and failed. 
