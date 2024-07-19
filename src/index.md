@@ -9,4 +9,8 @@ This is the landing page. There is not much here yet. However there is some stuf
 
 
 
-{% card "Hi", games, "Games" %}
+{% tag %}
+this is a test
+
+# Test
+{% endtag %}
