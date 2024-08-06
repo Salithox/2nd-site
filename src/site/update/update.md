@@ -5,6 +5,17 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 8-5-2024
+  - Added new link for goats site
+  - Added photo link to Goats site link.
+
+- Known bugs:
+  - Table broke when adding section to md file
+  - legend broke when adding section to md file
+  - card not working
+  - css for card not working
+
+
 - 7-18-2024
   - Added links section to site stuff
   - Added first link

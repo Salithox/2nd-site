@@ -32,6 +32,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy ("./src/css/style.css");
     eleventyConfig.addPassthroughCopy ("./src/css/components/");
     eleventyConfig.addPassthroughCopy ("./src/components/");
+    eleventyConfig.addPassthroughCopy ("./src/assets/");
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
     eleventyConfig.addFilter("postDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toLocaleString(DateTime.DATE_MED);
