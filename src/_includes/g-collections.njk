@@ -4,14 +4,22 @@ layout: "base.njk"
 <section>
     {{content | safe }}
 </section>
-    <hr>
-    <article>
-        {% for post in collections.gamelist %}
-            <section>
-            <h2>{{ post.data.title }}</h2>
-            {{ post.templateContent | safe }}
-            <br>
-            {{ post.date | postDate }}
-            </section>
-        {% endfor %}
-    </article>
+<table>
+{% for game in gctable %}
+    {% if loop.first %}
+        <thead>
+            <th>{{game.gameimage}}</th>
+            <th>{{game.gametitle}}</th>
+            <th>{{game.gamedate}}</th>
+            <th>{{game.gameplatform}}</th>
+        </thead>
+    {% else %}
+        <tr>
+            <td><img class=gameimage aherf="{{game.gameimage}}" src="{{game.gameimage}}"></td>
+            <td>{{game.gametitle}}</td>
+            <td>{{game.gamedate}}</td>
+            <td>{{game.gameplatform}}</td>
+        </tr>
+    {% endif %}
+{% endfor %}
+</table>

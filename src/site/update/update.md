@@ -5,6 +5,18 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 8-7-2024
+  - Added json file for tabling game collection
+  - added one game to test.
+  - removed card css
+  - removed card
+
+- Known bugs:
+  - ~~Table broke when adding section to md file~~
+  - ~~legend broke when adding section to md file~~
+  - ~~card not working~~
+  - ~~css for card not working~~
+
 - 8-5-2024
   - Added new link for goats site
   - Added photo link to Goats site link.

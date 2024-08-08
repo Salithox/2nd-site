@@ -102,3 +102,9 @@ li.legend {
 	display: grid;
 	grid-template-columns: 1fr, 1fr;
 }
+
+.gameimage {
+
+	width: 100px;
+	height: auto;
+}

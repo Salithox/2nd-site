@@ -1,0 +1,27 @@
+[
+    {
+        "gametitle": "Title",
+        "gameimage": "CoverArt",
+        "gamedate": "Date",
+        "gamegenre": "Genre",
+        "gameplatform": "Platform",
+        "gamedesc": "Description",
+        "gamelink": "Link"
+        
+    },
+
+    {
+        "gametitle": "Monster Hunter: World",
+        "gameimage": "/assets/gameart/Monster_Hunter_World_cover_art.jpg",
+        "gamedate": "January 26, 2018",
+        "gamegenre": "Fighting game, Action role-playing game, Action-adventure game",
+        "gameplatform": "Playstation 4, 5",
+        "gamedesc": "You beat up big chunky monsters!",
+        "gamelink": "Link"
+    }
+
+
+
+
+
+]
