@@ -11,6 +11,16 @@
     },
 
     {
+        "gametitle": "Fantasy Life",
+        "gameimage": "/assets/gameart/Fantasy_life.jpg",
+        "gamedate": "December 27, 2012",
+        "gamegenre": "Role-playing video game, Adventure game, Life simulation game, Fighting game, Simulation Game",
+        "gameplatform": "Nintendo 3DS",
+        "gamedesc": "Fantasy Life is a role-playing life simulation game",
+        "gamelink": "Link"
+    },
+
+    {
         "gametitle": "Monster Hunter: World",
         "gameimage": "/assets/gameart/Monster_Hunter_World_cover_art.jpg",
         "gamedate": "January 26, 2018",

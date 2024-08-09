@@ -5,6 +5,13 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 8-8-2024
+  - Added a 2nd game to collection
+  - updated logs
+
+- Known bugs:
+  - Cant get link to coverart to blow up. 
+
 - 8-7-2024
   - Added json file for tabling game collection
   - added one game to test.

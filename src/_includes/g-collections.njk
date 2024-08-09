@@ -11,13 +11,15 @@ layout: "base.njk"
             <th>{{game.gameimage}}</th>
             <th>{{game.gametitle}}</th>
             <th>{{game.gamedate}}</th>
+            <th>{{game.gamedesc}}</th>
             <th>{{game.gameplatform}}</th>
         </thead>
     {% else %}
         <tr>
-            <td><img class=gameimage aherf="{{game.gameimage}}" src="{{game.gameimage}}"></td>
+            <td><img class=gameimage src="{{game.gameimage}}"></td>
             <td>{{game.gametitle}}</td>
             <td>{{game.gamedate}}</td>
+            <td>{{game.gamedesc}}</td>
             <td>{{game.gameplatform}}</td>
         </tr>
     {% endif %}
