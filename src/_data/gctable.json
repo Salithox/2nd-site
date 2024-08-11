@@ -2,7 +2,7 @@
     {
         "gametitle": "Title",
         "gameimage": "CoverArt",
-        "gamedate": "Date",
+        "gamedate": "Release Date",
         "gamegenre": "Genre",
         "gameplatform": "Platform",
         "gamedesc": "Description",
@@ -28,10 +28,16 @@
         "gameplatform": "Playstation 4, 5",
         "gamedesc": "You beat up big chunky monsters!",
         "gamelink": "Link"
+    },
+
+    {
+        "gametitle" : "Tales of Arise",
+        "gameimage" : "/assets/gameart/tales_arise.jpeg",
+        "gamedate" : "September 9, 2021",
+        "gamegenre" : "Action role-playing game, Fighting game, Adventure game",
+        "gameplatform" : "Playstation 4, Steam",
+        "gamedesc" : "You control people and beat up others in a JRPG style",
+        "gamelink" : "Link"
     }
-
-
-
-
-
+    
 ]

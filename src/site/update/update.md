@@ -5,6 +5,13 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 8-10-2024
+  - Working more on game collections. 
+  - Building table in GSheets, to help clean up the data. 
+
+- Known bugs:
+  - Cant get link to coverart to blow up.
+
 - 8-8-2024
   - Added a 2nd game to collection
   - updated logs
