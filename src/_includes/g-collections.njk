@@ -16,7 +16,12 @@ layout: "base.njk"
         </thead>
     {% else %}
         <tr>
-            <td><img class=gameimage src="{{game.gameimage}}"></td>
+            <td>
+                <a>
+                     <a href= "{{game.gameimage}}" target="_blank">
+                      <img class=gameimage src="{{game.gameimage}}">
+                </a>
+            </td>
             <td>{{game.gametitle}}</td>
             <td>{{game.gamedate}}</td>
             <td>{{game.gamedesc}}</td>

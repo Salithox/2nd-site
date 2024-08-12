@@ -5,6 +5,14 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 8-11-2024
+  - added 11ty img
+  - fixed image link
+  
+- Known bugs:
+  - ~~Cant get link to coverart to blow up.~~
+  - cant get 11ty img to process correctly 
+
 - 8-10-2024
   - Working more on game collections. 
   - Building table in GSheets, to help clean up the data. 

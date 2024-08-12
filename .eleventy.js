@@ -5,12 +5,11 @@ const { DateTime } = require("luxon");
 // fast glob for iterating over folders and including files, used for images etc
 const fg = require('fast-glob');
 // for excerpt rendering markdown to HTML
-// const markdownIt = require("markdown-it");
+const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs')
 // for atom/rss feed
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 // const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs)
-const card = require('./src/_includes/components/card');
 
 
 const markdownItOptions = {
@@ -19,7 +18,6 @@ const markdownItOptions = {
     linkify: true
   }
   
-  const markdownIt = require('./src/_includes/components/markdown.js');
 
   module.exports = (eleventyConfig) => {
     eleventyConfig.setLibrary('md', markdownIt);
@@ -38,7 +36,6 @@ module.exports = function (eleventyConfig) {
         return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toLocaleString(DateTime.DATE_MED);
       });
 
-    eleventyConfig.addShortcode("card", card);
 
     return {
         dir: {
