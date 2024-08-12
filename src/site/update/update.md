@@ -5,6 +5,12 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 8-12-2024
+  - fixed 11ty img processing. Kinda
+  
+- Known bugs:
+  - ~~cant get 11ty img to process correctly ~~
+
 - 8-11-2024
   - added 11ty img
   - fixed image link

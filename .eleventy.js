@@ -10,7 +10,8 @@ const markdownItAttrs = require('markdown-it-attrs')
 // for atom/rss feed
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 // const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs)
-
+const Image = require("@11ty/eleventy-img")
+const path = require('path')
 
 const markdownItOptions = {
     html: true,
@@ -35,6 +36,38 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("postDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toLocaleString(DateTime.DATE_MED);
       });
+
+    	// --- START, eleventy-img
+	function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
+		console.log(`Generating image(s) from:  ${src}`)
+		let options = {
+			widths: [50, 100, 150, 200, 600, 900, 1500],
+			formats: ["webp", "jpeg"],
+			urlPath: "/assets/gameart",
+			outputDir: "./public/assets/gameart",
+			filenameFormat: function (id, src, width, format, options) {
+				const extension = path.extname(src)
+				const name = path.basename(src, extension)
+				return `${name}-${width}w.${format}`
+			}
+		}
+
+		// generate images
+		Image(src, options)
+
+		let imageAttributes = {
+			alt,
+			sizes,
+			loading: "lazy",
+			decoding: "async",
+		}
+		// get metadata
+		metadata = Image.statsSync(src, options)
+		return Image.generateHTML(metadata, imageAttributes)
+	}
+	eleventyConfig.addShortcode("image", imageShortcode)
+	// --- END, eleventy-img
+
 
 
     return {
