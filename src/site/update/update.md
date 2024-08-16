@@ -9,7 +9,7 @@ tags: "sitestuff"
   - fixed 11ty img processing. Kinda
   
 - Known bugs:
-  - ~~cant get 11ty img to process correctly ~~
+  - ~~cant get 11ty img to process correctly~~
 
 - 8-11-2024
   - added 11ty img

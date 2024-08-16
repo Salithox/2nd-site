@@ -2,6 +2,7 @@
 #page-container {
 	position: relative;
 	min-height: 100vh;
+	background-color: rgb(0, 0, 0);
 
 }
 
@@ -12,19 +13,20 @@
 }
 
 body {
-	max-width: 65%;
+	max-width: 55%;
 	margin: auto;
     font-family: sans-serif;
 	background-color: black;
 	color: rgb(0, 255, 34);
-}
+	background-image: linear-gradient(rgb(0, 0, 0), rgb(158, 6, 6) 50%, rgb(0, 0, 0) );
+} 
 
 ul.nav {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #000000;
+	background-color: #0011ff;
 	color: rgb(0, 255, 34);
 	text-align: center;
 	}
