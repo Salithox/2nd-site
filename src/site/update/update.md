@@ -5,6 +5,16 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 8-17-2024
+  - made thumbnail folder. 
+  - updated 11ty img set up.
+  - fixe all current known bugs
+  - added 1 new game to collection list. 
+  - added color to site. (playing around with it.)
+
+- Known bugs:
+  - ~~Having double images show up now with the 11ty image when called.~~
+
 - 8-12-2024
   - fixed 11ty img processing. Kinda
   

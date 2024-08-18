@@ -41,10 +41,10 @@ module.exports = function (eleventyConfig) {
 	function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
 		console.log(`Generating image(s) from:  ${src}`)
 		let options = {
-			widths: [50, 100, 150, 200, 600, 900, 1500],
-			formats: ["webp", "jpeg"],
-			urlPath: "/assets/gameart",
-			outputDir: "./public/assets/gameart",
+			widths: [50, 100],  //  150, 200, 600, 900, 1500
+  			formats: ["webp", "jpeg"],
+			urlPath: "/assets/gameart/thumbnail",
+			outputDir: "./public/assets/gameart/thumbnail",
 			filenameFormat: function (id, src, width, format, options) {
 				const extension = path.extname(src)
 				const name = path.basename(src, extension)

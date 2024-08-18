@@ -1,7 +1,9 @@
 [
     {
         "gametitle": "Title",
+        "gamethumbnail": "/assets/gameart/thumbnail/filename-100w.webp",
         "gameimage": "CoverArt",
+        "gameimage2": "CoverArtLocation",
         "gamedate": "Release Date",
         "gamegenre": "Genre",
         "gameplatform": "Platform",
@@ -11,33 +13,48 @@
     },
 
     {
-        "gametitle": "Fantasy Life",
-        "gameimage": "/assets/gameart/Fantasy_life.jpg",
-        "gamedate": "December 27, 2012",
-        "gamegenre": "Role-playing video game, Adventure game, Life simulation game, Fighting game, Simulation Game",
-        "gameplatform": "Nintendo 3DS",
-        "gamedesc": "Fantasy Life is a role-playing life simulation game",
-        "gamelink": "Link"
-    },
-
-    {
-        "gametitle": "Monster Hunter: World",
-        "gameimage": "/assets/gameart/Monster_Hunter_World_cover_art.jpg",
-        "gamedate": "January 26, 2018",
-        "gamegenre": "Fighting game, Action role-playing game, Action-adventure game",
-        "gameplatform": "Playstation 4, 5",
-        "gamedesc": "You beat up big chunky monsters!",
-        "gamelink": "Link"
-    },
-
-    {
+        "gametitle" : "Fantasy Life",
+        "gamethumbnail" : "/assets/gameart/thumbnail/Fantasy_life-100w.webp",
+        "gameimage" : "/assets/gameart/Fantasy_life.jpg",
+        "gameimage2" : "./src/assets/gameart/Fantasy_life.jpg",
+        "gamedate" : "December 27, 2012",
+        "gamegenre" : "Role-playing video game, Adventure game, Life simulation game, Fighting game, Simulation Game",
+        "gameplatform" : "Nintendo 3DS",
+        "gamedesc" : "Fantasy Life is a role-playing life simulation game",
+        "gamelink" : "Link"
+        },
+        {
+        "gametitle" : "Monster Hunter: World",
+        "gamethumbnail" : "/assets/gameart/thumbnail/Monster_Hunter_World_cover_art-100w.webp",
+        "gameimage" : "/assets/gameart/Monster_Hunter_World_cover_art.jpg",
+        "gameimage2" : "./src/assets/gameart/Monster_Hunter_World_cover_art.jpg",
+        "gamedate" : "January 26, 2018",
+        "gamegenre" : "Fighting game, Action role-playing game, Action-adventure game",
+        "gameplatform" : "Playstation 4, 5",
+        "gamedesc" : "You beat up big chunky monsters!",
+        "gamelink" : "Link"
+        },
+        {
+        "gametitle" : "Rabbit & Steel",
+        "gamethumbnail" : "/assets/gameart/thumbnail/Rabbits_Steel-100w.webp",
+        "gameimage" : "/assets/gameart/Rabbits_Steel.jpg",
+        "gameimage2" : "./src/assets/gameart/Rabbits_Steel.jpg",
+        "gamedate" : "September 28, 2023",
+        "gamegenre" : "Role-playing game, Indie game, Adventure game, Shooter game, Fighting game, Adventure",
+        "gameplatform" : "Steam",
+        "gamedesc" : "Odd game",
+        "gamelink" : "Link"
+        },
+        {
         "gametitle" : "Tales of Arise",
+        "gamethumbnail" : "/assets/gameart/thumbnail/Tales_Arise-100w.webp",
         "gameimage" : "/assets/gameart/Tales_Arise.jpeg",
+        "gameimage2" : "./src/assets/gameart/Tales_Arise.jpeg",
         "gamedate" : "September 9, 2021",
         "gamegenre" : "Action role-playing game, Fighting game, Adventure game",
         "gameplatform" : "Playstation 4, Steam",
         "gamedesc" : "You control people and beat up others in a JRPG style",
         "gamelink" : "Link"
-    }
+        }
     
 ]

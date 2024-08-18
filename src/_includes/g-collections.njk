@@ -18,8 +18,9 @@ layout: "base.njk"
         <tr>
             <td>
                 <a>
+                    {% image game.gameimage2, "" %}
                      <a href= "{{game.gameimage}}" target="_blank">
-                      <img class=gameimage src="{{game.gameimage}}" width="100">
+                      <img class=gamethumbnail src="{{game.gamethumbnail}}">
                 </a>
             </td>
             <td>{{game.gametitle}}</td>
