@@ -12,6 +12,22 @@
 	padding-right: 2rem;
 }
 
+h1 {
+	text-align: center;
+}
+
+#head2 {
+	color: rgb(255, 166, 0);
+	text-align: center;
+}
+
+#body1 {
+	font-size: 35px;
+	background: linear-gradient(#00ff00, #2f00ff, #880000);
+	background-clip: text;
+	color: transparent;
+}
+
 body {
 	max-width: 55%;
 	margin: auto;

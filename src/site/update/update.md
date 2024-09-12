@@ -5,6 +5,13 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 9-11-2024
+  - Changed site stuff to Un-Homed.
+  - added more games to collection.
+  - added IDs to markdown stuff
+  - CSS some stuff
+  - More colors
+
 - 8-17-2024
   - made thumbnail folder. 
   - updated 11ty img set up.

@@ -13,6 +13,17 @@
     },
 
     {
+        "gametitle" : "Astro Bot",
+        "gamethumbnail" : "/assets/gameart/thumbnail/astrobot-100w.webp",
+        "gameimage" : "/assets/gameart/astrobot.jpg",
+        "gameimage2" : "./src/assets/gameart/astrobot.jpg",
+        "gamedate" : "September 6, 2024",
+        "gamegenre" : "Platform game, Fighting game",
+        "gameplatform" : "Playstation 5",
+        "gamedesc" : "Stupidly fun game",
+        "gamelink" : "Link"
+        },
+        {
         "gametitle" : "Fantasy Life",
         "gamethumbnail" : "/assets/gameart/thumbnail/Fantasy_life-100w.webp",
         "gameimage" : "/assets/gameart/Fantasy_life.jpg",
@@ -46,6 +57,28 @@
         "gamelink" : "Link"
         },
         {
+        "gametitle" : "Rise of the Rōnin",
+        "gamethumbnail" : "/assets/gameart/thumbnail/Rise_Ronin-100w.webp",
+        "gameimage" : "/assets/gameart/Rise_Ronin.jpeg",
+        "gameimage2" : "./src/assets/gameart/Rise_Ronin.jpeg",
+        "gamedate" : "March 22, 2024",
+        "gamegenre" : "Action role-playing game, Fighting game, Adventure game",
+        "gameplatform" : "Playstation 5",
+        "gamedesc" : "Doing the Ronin thing.",
+        "gamelink" : "Link"
+        },
+        {
+        "gametitle" : "Star Wars: Outlaws",
+        "gamethumbnail" : "/assets/gameart/thumbnail/SW_Outlaws-100w.webp",
+        "gameimage" : "/assets/gameart/SW_Outlaws.jpg",
+        "gameimage2" : "./src/assets/gameart/SW_Outlaws.jpg",
+        "gamedate" : "August 27, 2024",
+        "gamegenre" : "Action-adventure",
+        "gameplatform" : "Playstation 5",
+        "gamedesc" : "Smuggling around the galaxy",
+        "gamelink" : "Link"
+        },
+        {
         "gametitle" : "Tales of Arise",
         "gamethumbnail" : "/assets/gameart/thumbnail/Tales_Arise-100w.webp",
         "gameimage" : "/assets/gameart/Tales_Arise.jpeg",
@@ -55,6 +88,19 @@
         "gameplatform" : "Playstation 4, Steam",
         "gamedesc" : "You control people and beat up others in a JRPG style",
         "gamelink" : "Link"
+        },
+        {
+        "gametitle" : "That Time I Got Reincarnated as a Slime ISEKAI Chronicles",
+        "gamethumbnail" : "/assets/gameart/thumbnail/Slime_Isekai-100w.webp",
+        "gameimage" : "/assets/gameart/Slime_Isekai.jpg",
+        "gameimage2" : "./src/assets/gameart/Slime_Isekai.jpg",
+        "gamedate" : "August 7, 2024",
+        "gamegenre" : "Role-playing video game, Adventure game, Fighting game",
+        "gameplatform" : "Playstation 5",
+        "gamedesc" : "Still undecided about it.,",
+        "gamelink" : "Link"
         }
     
 ]
+
+

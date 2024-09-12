@@ -6,6 +6,7 @@ const { DateTime } = require("luxon");
 const fg = require('fast-glob');
 // for excerpt rendering markdown to HTML
 const markdownIt = require("markdown-it");
+const markdownItAnchor = require('markdown-it-anchor');
 const markdownItAttrs = require('markdown-it-attrs')
 // for atom/rss feed
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -19,6 +20,9 @@ const markdownItOptions = {
     linkify: true
   }
   
+  let markdownItAnchorOptions = {
+    level: 2 // minimum level header -- anchors will only be applied to h2 level headers and below but not h1
+}
 
   module.exports = (eleventyConfig) => {
     eleventyConfig.setLibrary('md', markdownIt);
@@ -32,6 +36,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy ("./src/css/components/");
     eleventyConfig.addPassthroughCopy ("./src/components/");
     eleventyConfig.addPassthroughCopy ("./src/assets/");
+	eleventyConfig.setLibrary("md", markdownIt().use(markdownItAnchor).use(markdownItAttrs))
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
     eleventyConfig.addFilter("postDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toLocaleString(DateTime.DATE_MED);
