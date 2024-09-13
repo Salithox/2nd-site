@@ -5,6 +5,13 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 9-12-2024
+  - Fixed games which i broke. 
+  - Changed formatting from md to njk
+
+- Known bugs:
+  - ~~Fixed games~~
+
 - 9-11-2024
   - Changed site stuff to Un-Homed.
   - added more games to collection.
