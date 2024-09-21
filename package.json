@@ -21,6 +21,9 @@
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-attrs": "^4.2.0",
-    "outdent": "^0.8.0"
+    "markdown-it-container": "^4.0.0",
+    "outdent": "^0.8.0",
+    "remark-containers": "^1.2.0",
+    "remark-directive": "^3.0.0"
   }
 }

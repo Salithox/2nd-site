@@ -1,8 +1,12 @@
 ---
 title: "StarWars Outlaws"
-tags: "upcominggames"
+tags: "nowplaying"
 desc: "GTA of starwars"
 date: 2024-08-30
 ---
 
-From what some are saying, this will be the GTA of starwars. 
+::: div scroll-container
+
+This is a game where you are a smuggler and take on jobs for the cartel's to advance and make a new life for yourself. {#sw-o}
+
+:::

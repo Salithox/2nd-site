@@ -20,6 +20,17 @@ h1 {
 	color: rgb(255, 166, 0);
 	text-align: center;
 }
+.scroll-container {
+	border: 3px solid rgb(255, 0, 0);
+	border-radius: 5px;
+	height: 100px;
+	overflow: hidden;
+}
+	#sw-o {
+	height: 100%;
+	text-align: center;
+}
+
 
 #body1 {
 	font-size: 35px;
