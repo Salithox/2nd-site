@@ -14,6 +14,16 @@ const markdownItAttrs = require('markdown-it-attrs')
 const Image = require("@11ty/eleventy-img")
 const path = require('path')
 
+// remark containers section
+// const unified = require('unified')
+// const unified = require('unified')
+// const parse = require('remark-parse')
+const containers = require('remark-containers')
+// const stringify = require('rehype-stringify')
+// const remark2rehype = require('remark-rehype')
+
+// End remark containers section
+
 const markdownItOptions = {
     html: true,
     breaks: true,
