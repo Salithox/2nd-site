@@ -5,6 +5,13 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 9-22-2024
+  - added more packages for site stuff.
+  - did some css work on the star wars outlaw game part of the now playing page.
+
+- Known bugs:
+  - Might have added some bugs. not sure yet. 
+
 - 9-12-2024
   - Fixed games which i broke. 
   - Changed formatting from md to njk
