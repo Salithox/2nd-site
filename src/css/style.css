@@ -20,6 +20,45 @@ h1 {
 	color: rgb(255, 166, 0);
 	text-align: center;
 }
+
+.ball-container {
+	border: 3px solid rgb(255, 0, 0);
+	border-radius: 5px;
+	height: 100px;
+	overflow: hidden;
+  }
+  
+  .ball {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: blue;
+	transform: translateY(1000%);
+	animation: bounce 3s infinite linear;
+  }
+
+  #db-sz {
+	height: 100%;
+	text-align: center;
+	color: rgb(216, 115, 0);
+	
+	/* animation properties */
+	transform: translateY(100%);
+	
+	-moz-animation: my-animation 5s linear infinite;
+	-webkit-animation: my-animation 5s linear infinite;
+	animation: my-animation 5s linear infinite;
+  }
+  
+  @keyframes bounce {
+	from {
+	  transform: rotateX(25%) rotateZ(45deg);
+	}
+	to {
+	  transform: translateX(1000%);
+	}
+  }
+
 .scroll-container {
 	border: 3px solid rgb(255, 0, 0);
 	border-radius: 5px;
