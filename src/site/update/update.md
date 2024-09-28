@@ -5,6 +5,16 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+- 9-27-2024
+  - Fixed some stuff i found broken. (links page)
+  - corrected some CSS
+  - added a blue ball to dragon ball sparking zero.. It needs work. 
+  - made more bugs?
+
+- Known bugs:
+  - ~~Might have added some bugs. not sure yet.~~
+  - ~~Fixed links page.~~
+
 - 9-22-2024
   - added more packages for site stuff.
   - did some css work on the star wars outlaw game part of the now playing page.
