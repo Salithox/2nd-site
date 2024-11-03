@@ -5,6 +5,12 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+
+- 11-2-2024
+
+- Known bugs:
+  - Cant get countdown timer to work at all. 
+
 - 9-27-2024
   - Fixed some stuff i found broken. (links page)
   - corrected some CSS
