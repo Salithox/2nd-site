@@ -1,5 +1,9 @@
 // not needed, but leaving here in case I want it later
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
+module.exports = async function() {
+	const {eleventyRenderPlugin, EleventyI18Plugin, EleventyHtmlBasePlugin} = await import("@11ty/eleventy");	
+}
+
+// const { EleventyRenderPlugin } = require("@11ty/eleventy");
 // import luxon for post datetime conversion
 const { DateTime } = require("luxon");
 // fast glob for iterating over folders and including files, used for images etc
@@ -50,6 +54,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
     eleventyConfig.addFilter("postDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toLocaleString(DateTime.DATE_MED);
+	//eleventyConfig.addPlugin(UpgradeHelper);
       });
 
     	// --- START, eleventy-img
@@ -84,39 +89,23 @@ module.exports = function (eleventyConfig) {
 	// --- END, eleventy-img
 
 
-// ---- Start countdown clock
+// Countdown timer function
+function countdown(yy, mm, dd) {
+  const countDownDate = new Date(yy, mm - 1, dd).getTime();
+  const intervalId = setInterval(() => {
+	const now = new Date().getTime();
+	const distance = countDownDate - now;
+	const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	const countdownText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+	document.querySelector(".timer").innerHTML = countdownText;
+  }, 1000);
+}
 
-// Set the date we're counting down to
-function myTimer(yy,mm,dd) {
-	var countDownDate = new Date(yy,mm,dd).getTime();
-	
-	// Update the count down every 1 second
-	var x = setInterval(function() {
-	  // Get today's date and time
-	  var now = new Date().getTime();
-	  
-	  // Find the distance between now and the count down date
-	  var distance = countDownDate - now;
-	  
-	  // Time calculations for days, hours, minutes and seconds
-	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	  
-	  // Return the result as a string
-	  var countdownText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-	  
-	  // Update an external element or variable with the new value
-	  // For example, update an HTML element with the id "countdown"
-	  document.getElementById("countdown").innerHTML = countdownText;
-	}, 1000); // 1000ms = 1s
-  }
-  
-  eleventyConfig.addShortcode("CountDown", function(yy, mm, dd) {
-	myTimer(yy, mm, dd);
-  });
-	// --- End countdown clock
+// Add Eleventy shortcode
+eleventyConfig.addShortcode("CountDown", countdown)
 	
 
 	

@@ -11,10 +11,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^3.0.0"
   },
   "dependencies": {
-    "@11ty/eleventy-img": "^4.0.2",
+    "@11ty/eleventy-img": "^5.0.0",
     "common-tags": "^1.8.2",
     "fast-glob": "^3.3.2",
     "luxon": "^3.4.4",
