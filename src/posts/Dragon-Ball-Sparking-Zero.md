@@ -13,5 +13,6 @@ templateEngineOverride: false
 
 
 <div class="timer">
-{% CountDown, 24,11,9 % }
+  {% CountDown, 24, 11, 9 %}
 </div>
+

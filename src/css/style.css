@@ -16,7 +16,7 @@ h1 {
 	text-align: center;
 }
 
-#head2 {
+.head2 {
 	color: rgb(255, 166, 0);
 	text-align: center;
 }
@@ -107,7 +107,7 @@ h1 {
   }
 
 
-#body1 {
+.body1 {
 	font-size: 35px;
 	background: linear-gradient(#00ff00, #2f00ff, #880000);
 	background-clip: text;
