@@ -2,9 +2,18 @@
 layout: "base.njk"
 title: Hello World
 ---
+<div class="head2">
+<h2> Hello Test Fam!!!! </h2>
+</div>
 
-## Hello Test Fam!!!! {.head2}
+<div class="body1">
+This is the landing page. There is not much here yet. However there is some stuff in the games section. Please take a look.
+</div>
 
-This is the landing page. There is not much here yet. However there is some stuff in the games section. Please take a look. {.body1}
+<br>
 
+<div class="test">
+this is a test
+</div>
 
+## test 

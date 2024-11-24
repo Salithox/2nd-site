@@ -9,11 +9,11 @@ const { DateTime } = require("luxon");
 // fast glob for iterating over folders and including files, used for images etc
 const fg = require('fast-glob');
 // for excerpt rendering markdown to HTML
-const markdownIt = require("markdown-it");
+//const markdownIt = require("markdown-it");
 
-// const markdownItAnchor = require('markdown-it-anchor');
+//const markdownItAnchor = require('markdown-it-anchor');
 
-const markdownItAttrs = require('markdown-it-attrs')
+//const markdownItAttrs = require('markdown-it-attrs')
 // for atom/rss feed
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
 // const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs)
@@ -24,19 +24,29 @@ const path = require('path')
 const containers = require('remark-containers')
 // End remark containers section
 
-const markdownItOptions = {
-    html: true,
-    breaks: true,
-    linkify: true
-  }
+//const markdownItOptions = {
+//    html: true,
+//    breaks: true,
+//    linkify: true
+//  }
+
+//module.exports = function (eleventyConfig) {
+//	let options = {
+//		html: true,
+//		breaks: true,
+//		linkify: true,
+//	};
+
+//	eleventyConfig.setLibrary('md', markdownIt(options));
+//}
   
   // let markdownItAnchorOptions = {
     // level: 2 // minimum level header -- anchors will only be applied to h2 level headers and below but not h1
 //}
 
-  module.exports = (eleventyConfig) => {
-    eleventyConfig.setLibrary('md', markdownIt);
-  }
+//  module.exports = (eleventyConfig) => {
+//    eleventyConfig.setLibrary('md', markdownIt(options));
+//  }
 
 
 
@@ -46,7 +56,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy ("./src/css/components/");
     eleventyConfig.addPassthroughCopy ("./src/components/");
     eleventyConfig.addPassthroughCopy ("./src/assets/");
-	eleventyConfig.setLibrary("md", markdownIt().use(markdownItAttrs))
+	///eleventyConfig.setLibrary("md", markdownIt().use(markdownItAttrs))
 	//eleventyConfig.setLibrary("md", markdownIt().use(markdownItAnchor).use(markdownItAttrs))
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
     eleventyConfig.addFilter("postDate", (dateObj) => {
