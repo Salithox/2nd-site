@@ -13,11 +13,20 @@
 }
 
 h1 {
+
 	text-align: center;
 }
 
 .head2 {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
 	color: rgb(255, 166, 0);
+	text-align: center;
+}
+
+.grid-test{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
 	text-align: center;
 }
 

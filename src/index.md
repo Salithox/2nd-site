@@ -2,8 +2,11 @@
 layout: "base.njk"
 title: Hello World
 ---
+
 <div class="head2">
 <h2> Hello Test Fam!!!! </h2>
+<h2> I got Grid to work </h2>
+<h2> Testing level 3 box 3 maybe? </h2>
 </div>
 
 <div class="body1">
