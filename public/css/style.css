@@ -17,6 +17,11 @@ h1 {
 	text-align: center;
 }
 
+h3 {
+
+	text-align: center;
+}
+
 .head2 {
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
@@ -27,8 +32,10 @@ h1 {
 .grid-test{
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
+	grid-gap: 10px;
 	text-align: center;
 }
+
 
 .ball-container {
 	border: 3px solid rgb(255, 0, 0);
