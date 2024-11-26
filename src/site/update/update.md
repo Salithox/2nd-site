@@ -6,6 +6,17 @@ tags: "sitestuff"
 ---
 
 
+- 11-26-2024
+  - Played with grids
+  - added twitch links
+  - updates some code
+  - placeholder for discord links
+  - added links to now playing games page directly from bundled page.
+
+- Known Bugs:
+  - Im sure there is something i broke.
+  - ~~Links not aligned for some reason.~~
+
 - 11-2-2024
 
 - Known bugs:

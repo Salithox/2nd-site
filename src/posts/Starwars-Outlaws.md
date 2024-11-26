@@ -3,6 +3,7 @@ title: "StarWars Outlaws"
 tags: "nowplaying"
 desc: "GTA of starwars"
 date: 2024-08-30
+link: /posts/Starwars-Outlaws/
 templateEngineOverride: false
 ---
 
