@@ -1180,6 +1180,8 @@ input[type="checkbox"] {
 }
 
 .nes-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   position: relative;
   padding: 1.5rem 2rem;
   border-color: black;
@@ -1218,7 +1220,7 @@ input[type="checkbox"] {
 .nes-container.is-dark {
   position: relative;
   margin: 4px;
-  color: #fff;
+	color: rgb(255, 166, 0);
   background-color: #212529;
   border-color: white;
 }
