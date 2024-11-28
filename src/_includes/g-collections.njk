@@ -4,7 +4,8 @@ layout: "base.njk"
 <section>
     {{content | safe }}
 </section>
-<table>
+<div class="nes-table-responsive">
+<table class="nes-table is-bordered is-centered">
 {% for game in gctable %}
     {% if loop.first %}
         <thead>
@@ -31,3 +32,4 @@ layout: "base.njk"
     {% endif %}
 {% endfor %}
 </table>
+</div>

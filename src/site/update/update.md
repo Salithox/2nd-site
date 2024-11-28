@@ -5,6 +5,17 @@ desc: " A list of my updates/broken things."
 tags: "sitestuff"
 ---
 
+<div class="Li-Updates">
+
+- 11-27-2024
+  - Changed the CSS to NES.CSS. 
+  - Modified some of the NES.CSS to have my colors.
+  - Added NES font. 
+  
+- Known bugs:
+  - Sizing and alignment is off.
+  - Many other things
+  - Please tell me
 
 - 11-26-2024
   - Played with grids
@@ -187,3 +198,5 @@ tags: "sitestuff"
 
 - known bugs
   - ~~When clicking on site stuff, it does not list the links from the drop down (see clicking on games for ref.)~~
+  
+  </div>

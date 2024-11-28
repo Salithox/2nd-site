@@ -21,6 +21,7 @@
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-attrs": "^4.2.0",
     "markdown-it-container": "^4.0.0",
+    "nes.css": "^2.2.1",
     "node-fetch-native": "^1.6.4",
     "remark-containers": "^1.2.0"
   }
