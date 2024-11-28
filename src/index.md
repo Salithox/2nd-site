@@ -1,6 +1,7 @@
 ---
 layout: "base.njk"
-title: Hello World
+title: Hello World!
+cssfile: card.css
 ---
 
 <div class="head2">
@@ -15,7 +16,7 @@ This is the landing page. There is not much here yet. However there is some stuf
 
 <br>
 
-<div class="test">
+<div class="card__container">
 this is a test
 </div>
 

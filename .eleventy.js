@@ -52,8 +52,8 @@ const containers = require('remark-containers')
 
 
 module.exports = function (eleventyConfig) {
-    eleventyConfig.addPassthroughCopy ("./src/css/style.css");
-    eleventyConfig.addPassthroughCopy ("./src/css/components/");
+    eleventyConfig.addPassthroughCopy ("./src/css/");
+    // eleventyConfig.addPassthroughCopy ("./src/css/components/");
     eleventyConfig.addPassthroughCopy ("./src/components/");
     eleventyConfig.addPassthroughCopy ("./src/assets/");
 	///eleventyConfig.setLibrary("md", markdownIt().use(markdownItAttrs))

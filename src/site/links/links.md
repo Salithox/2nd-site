@@ -15,8 +15,9 @@ templateEngineOverride:
 <section>
 <h3>Twitch Channels to watch</h3>
 
-<li> Kohakumoon - <a href="http://www.twitch.tv/Kohakumoon" target="_blank" alt="Kohakumoon's Twitch">Kohakumoon's Twitch Page </a> </li>
+<li> Kohakumoon - <a href="http://www.twitch.tv/Kohakumoon" target="_blank" alt="Kohakumoon's Twitch">Kohakumoon's Twitch Page</a></li>
 <li> Salithox  - <a href="http://www.twitch.tv/Salithox" target="_blank" alt="Salithox's Twitch">Salithox's Twtich Page</a></li>
+<li> Chaos-Goat - <a href="http://www.twitch.tv/Goatmanish" target="_blank" alt="GoatManish Twitch">Chaos-Goats Twitch Page</a></li>
 </section>
 
 <br>
