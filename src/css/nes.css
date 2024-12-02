@@ -1680,7 +1680,7 @@ input[type="checkbox"] {
 }
 
 .nes-table.is-dark::before {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   right: 0;
   bottom: 0;
