@@ -4,8 +4,8 @@ layout: "base.njk"
 <section>
     {{content | safe }}
 </section>
-<div class="nes-table-responsive">
-<table class="nes-table is-bordered is-centered is-dark">
+<div> 
+<table>
 {% for game in gctable %}
     {% if loop.first %}
         <thead>

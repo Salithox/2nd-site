@@ -1,4 +1,33 @@
 
+html {
+	font-family: press-start-2p;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  @-ms-viewport {
+	width: device-width;
+  }
+
+  html,
+  body,
+  pre,
+  code,
+  kbd,
+  samp {
+	font-family: "Press Start 2P";
+  }
+  
+  html {
+	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABFklEQVRYR9WXURLDIAhE6/0PbSdOtUpcd1Gnpv1KGpTHBpCE1/cXq+vrMph7dGvXZTtpfW10DCA5jrH1H0Jhs5E0hnZdCR+vb5S8Nn8mQCeS9BdSalYJqMBjAGzq59xAESN7VFVUgV8AZB/dZBR7QTFDCqGquvUBVVoEtgIwpQRzmANSFHgWQKExHdIrPeuMvQNDarXe6nC/AutgV3JW+6bgqQLeV8FekRtgV+ToDKEKnACYKsfZjjkam7a0ZpYTytwmgainpC3HvwBocgKOxqRjehoR9DFKNFYtOwCGYCszobeCbl26N6yyQ6g8X/Wex/rBPsNEV6qAMaJPMynIHQCoSqS9JSMmwef51LflTgCRszU7DvAGiV6mHWfsaVUAAAAASUVORK5CYII=), auto;
+  }
+  
+  .nes-pointer {
+	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0, pointer;
+  }
+
 #page-container {
 	position: relative;
 	min-height: 100vh;
@@ -12,7 +41,7 @@
 	padding-right: 2rem;
 }
 
-h1 {
+/* h1 {
 
 	text-align: center;
 }
@@ -20,13 +49,20 @@ h1 {
 h3 {
 
 	text-align: center;
+} */
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
 }
 
 .head2 {
+	/* text-align: right; */
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
+	grid-gap: 50px;
+	margin-bottom: 50px;
 	color: rgb(255, 166, 0);
-	text-align: center;
+	/* text-align: center; */
 }
 
 .grid-test{
@@ -133,7 +169,7 @@ h3 {
 body {
 	max-width: 55%;
 	margin: auto;
-    font-family: sans-serif;
+    font-family: press-start 2p,sans-serif;
 	background-color: black;
 	color: rgb(0, 255, 34);
 	background-image: linear-gradient(rgb(0, 0, 0), rgb(158, 6, 6) 50%, rgb(0, 0, 0) );
@@ -168,6 +204,7 @@ nav {
 	li {
 		float: center;
 		font-size: 1em;
+		
 	}
 
 	li a, .dropbtn {
@@ -177,6 +214,7 @@ nav {
 		padding: 14px 16px;
 		text-decoration: none;
 		font-size: 1em;
+		cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0, pointer;
 	}
 
 	li a:hover, .dropdown:hover .dropbtn {
@@ -213,17 +251,29 @@ nav {
 }
 
 table, th, td {
-
-	padding: 12px 16px;
+	max-width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	/* padding: 12px 16px; */
 	border: 2px solid;
+	text-align: center;
 	tr:hover {background-color: rgb(54, 0, 0);}
+	/* cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0, pointer; */
+
 }
 
-li.legend {
-	display: grid;
-	grid-template-columns: 1fr, 1fr;
-}
 
 picture {
 	display: none;
 }
+
+img {
+	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0, pointer;
+
+}
+
+.Li-Links, a {
+	list-style-type: none;
+	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC) 14 0, pointer;
+}
+
