@@ -3,7 +3,7 @@ html {
 	font-family: press-start-2p;
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
-	-ms-overflow-style: scrollbar;
+	-ms-overflow-style: auto;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   
@@ -29,9 +29,18 @@ html {
   }
 
 #page-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas:
+	'nav nav nav'
+	'header header header'
+	'body body body'
+	'footer footer footer';
 	position: relative;
 	min-height: 100vh;
 	background-color: rgb(0, 0, 0);
+	overflow-x: auto;
 
 }
 
@@ -54,7 +63,12 @@ h3 {
 h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
-
+header {
+	grid-area: header;
+	/* grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 2; */
+}
 .head2 {
 	/* text-align: right; */
 	display: grid;
@@ -73,92 +87,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.ball-container {
-	border: 3px solid rgb(255, 0, 0);
-	border-radius: 5px;
-	height: 100px;
-	overflow: hidden;
-  }
-  
-  .ball {
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	background-color: blue;
-	transform: translateY(1000%);
-	animation: bounce 3s infinite linear;
-  }
-
-  #db-sz {
-	height: 100%;
-	text-align: center;
-	color: rgb(216, 115, 0);
-	
-	/* animation properties */
-	transform: translateY(100%);
-	
-	-moz-animation: my-animation 5s linear infinite;
-	-webkit-animation: my-animation 5s linear infinite;
-	animation: my-animation 5s linear infinite;
-  }
-  
-  @keyframes bounce {
-	from {
-	  transform: rotateX(25%) rotateZ(45deg);
-	}
-	to {
-	  transform: translateX(1000%);
-	}
-  }
-
-.scroll-container {
-	border: 3px solid rgb(255, 0, 0);
-	border-radius: 5px;
-	height: 100px;
-	overflow: hidden;
-}
-
-#sw-o {
-	height: 100%;
-	text-align: center;
-	color: yellow;
-	
-	/* animation properties */
-	-moz-transform: translateY(100%);
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	
-	-moz-animation: my-animation 5s linear infinite;
-	-webkit-animation: my-animation 5s linear infinite;
-	animation: my-animation 5s linear infinite;
-  }
-  
-  /* for Firefox */
-  @-moz-keyframes my-animation {
-	from { -moz-transform: translateY(100%); }
-	to { -moz-transform: translateY(-100%); }
-  }
-  
-  /* for Chrome */
-  @-webkit-keyframes my-animation {
-	from { -webkit-transform: translateY(100%); }
-	to { -webkit-transform: translateY(-100%); }
-  }
-  
-  @keyframes my-animation {
-	from {
-	  -moz-transform: translateY(100%);
-	  -webkit-transform: translateY(100%);
-	  transform: translateY(100%);
-	}
-	to {
-	  -moz-transform: translateY(-100%);
-	  -webkit-transform: translateY(-100%);
-	  transform: translateY(-100%);
-	}
-  }
-
-
 .body1 {
 	font-size: 40px;
 	background: linear-gradient(#00ff00, #2f00ff, #880000);
@@ -167,6 +95,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+	grid-area: body;
+	/* grid-row-start: 3; */
 	max-width: 55%;
 	margin: auto;
     font-family: press-start 2p,sans-serif;
@@ -185,7 +115,20 @@ ul.nav {
 	text-align: center;
 	}
 
-ul.footer {
+footer{
+	display: grid;
+}
+
+.footer {
+	grid-area: footer;
+	/* grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 4; */
+	text-align: center;
+	list-style-type: none;
+}
+
+/* ul.footer {
 	position: absolute;
 	width: 100%;
 	bottom: 0;
@@ -197,10 +140,13 @@ ul.footer {
 	color: rgb(0, 255, 34);
 	text-align: center;
 	line-height: 1em;
-}
+} */
 
 nav {
-
+	grid-area: nav;
+	/* grid-row-start: 1;
+	grid-column-start: 1;
+	grid-column-end: 3; */
 	li {
 		float: center;
 		font-size: 1em;
@@ -228,10 +174,11 @@ nav {
 	.dropdown-content {
 		display: none;
 		position: absolute;
+		
 		/*background-color: #f9f9f9;*/
 		background-color: #000000;
 		min-width: 160px;
-		box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+		box-shadow: 0px 8px 16px 8px #f3030333;
 		z-index: 1;
 	}
 
@@ -248,6 +195,10 @@ nav {
 	.dropdown:hover .dropdown-content {
 		display:block;
 	}
+}
+
+.table-overflow-x {
+	overflow-x: auto;
 }
 
 table, th, td {
